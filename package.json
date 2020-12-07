@@ -4,7 +4,8 @@
   "description": "Curso de BOOTSTRAP en la universidad de Austral",
   "main": "index.html",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "lite-server"
   },
   "repository": {
     "type": "git",
@@ -15,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/montvlein/curso-bootstrap/issues"
   },
-  "homepage": "https://github.com/montvlein/curso-bootstrap#readme"
+  "homepage": "https://github.com/montvlein/curso-bootstrap#readme",
+  "devDependencies": {
+    "lite-server": "^2.6.1"
+  }
 }

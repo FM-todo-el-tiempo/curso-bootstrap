@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<title>Curso-bootstrap</title>
+		<meta name="description" content="trabajo practico"/>
+		<meta name="author" content="Montlein"/>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
+		<link rel="stylesheet" type="text/css" href="node_modules/bootstrap/dist/css/bootstrap.min.css"/>
+		
+	</head>
+	<body>
+		<header>
+			<div id="site_identity"><!--identidad del sitio-->
+				<input type="checkbox" id="luz">
+				<label for="luz">
+				<svg height="100" width="100" id="lamp"> <!--logo dibujado-->
+								<rect height="100" width="100" rx="0"/>
+								<line x1="0" x2="100" y1="0" y2="0" class="lamp"/>
+								<line x1="0" x2="100" y1="10" y2="10" class="lamp"/>
+								<line x1="0" x2="100" y1="20" y2="20" class="lamp"/>
+								<line x1="0" x2="100" y1="30" y2="30" class="lamp"/>
+								<line x1="0" x2="100" y1="40" y2="40" class="lamp"/>
+								<line x1="0" x2="100" y1="50" y2="50" class="lamp"/>
+								<line x1="0" x2="100" y1="60" y2="60" class="lamp"/>
+								<line x1="0" x2="100" y1="70" y2="70" class="lamp"/>
+								<line x1="0" x2="100" y1="80" y2="80" class="lamp"/>
+								<line x1="0" x2="100" y1="90" y2="90" class="lamp"/>
+								<line x1="0" x2="100" y1="100" y2="100" class="lamp"/>
+				 </svg>
+				</label>
+				<a href="javascript:window.location.reload(true)"><h2>Curso BOOTSTRAP</h2></a>
+			</div>
+			<nav><!--menu-->
+				<ul>
+					<li><a href="#inicio">Inicio</a></li>
+					<li><a href="#main">cuerpo</a></li>
+					<li><a href="#footer">Pie de pagina</a></li>
+				</ul>
+			</nav>
+		</header>
+<!--frente de la tienda-->
+	<main id="main">
+		<div>
+			<p>El cuerpo de la pagina va acá
+			<span><br/>Esto es un span</span></p></div>
+	</main>
+<!--fin del frente-->
+	<footer id="footer">
+			<input type="text" class="search" id="buscador" placeholder="Buscardor" >
+			<input type="checkbox" id="btn-menu">
+			<label for="btn-menu" class="icono-menu">
+				<svg class="dibujo-icono-menu">
+				<line x1="0" x2="30" y1="10" y2="10"/>
+				<line x1="0" x2="30" y1="20" y2="20"/>
+				<line x1="0" x2="30" y1="30" y2="30"/>
+				</svg>
+			</label>
+			<nav class="menu" id="menu_bottom">
+				<ul>
+					<li><a href="#Perfil">Perfil</a></li>
+					<li><a href="#">Notificaciones</a></li>
+					<li><a href="#">Favoritos</a></li>
+					<li><a href="#">Compras</a></li>
+					<li><a href="#">Vender</a></li>
+					<li><a href="#">Configuración</a></li>
+				</ul>
+			</nav>
+	</footer>
+	<script src="node_modules/jquery/dist/jquery.min.js"></script>
+	<script src="node_modules/popper.js/dist/popper.min.js"></script>
+	<script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+	</body>
+</html>

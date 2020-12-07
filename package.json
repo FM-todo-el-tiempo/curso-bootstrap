@@ -1,0 +1,19 @@
+{
+  "name": "curso-bootstrap",
+  "version": "1.0.0",
+  "description": "Curso de BOOTSTRAP en la universidad de Austral",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/montvlein/curso-bootstrap.git"
+  },
+  "author": "Montvlein",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/montvlein/curso-bootstrap/issues"
+  },
+  "homepage": "https://github.com/montvlein/curso-bootstrap#readme"
+}

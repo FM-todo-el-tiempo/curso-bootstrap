@@ -1,0 +1,20 @@
+.jumbotron {
+    background: #e0d8b0;
+}
+
+body {
+    background: #e7ebda;
+}
+
+footer {
+    background: #e0d8b0;
+    padding: 10px 15px 0 15px;
+}
+
+.ficha {
+    padding: 5px 10px 5px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex:1 250px;
+}

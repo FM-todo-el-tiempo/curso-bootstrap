@@ -7,66 +7,48 @@
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
 		<link rel="stylesheet" type="text/css" href="node_modules/bootstrap/dist/css/bootstrap.min.css"/>
+		<link rel="stylesheet" type="text/css" href="css/main.css"/>
 		
 	</head>
 	<body>
 		<header>
-			<div id="site_identity"><!--identidad del sitio-->
-				<input type="checkbox" id="luz">
-				<label for="luz">
-				<svg height="100" width="100" id="lamp"> <!--logo dibujado-->
-								<rect height="100" width="100" rx="0"/>
-								<line x1="0" x2="100" y1="0" y2="0" class="lamp"/>
-								<line x1="0" x2="100" y1="10" y2="10" class="lamp"/>
-								<line x1="0" x2="100" y1="20" y2="20" class="lamp"/>
-								<line x1="0" x2="100" y1="30" y2="30" class="lamp"/>
-								<line x1="0" x2="100" y1="40" y2="40" class="lamp"/>
-								<line x1="0" x2="100" y1="50" y2="50" class="lamp"/>
-								<line x1="0" x2="100" y1="60" y2="60" class="lamp"/>
-								<line x1="0" x2="100" y1="70" y2="70" class="lamp"/>
-								<line x1="0" x2="100" y1="80" y2="80" class="lamp"/>
-								<line x1="0" x2="100" y1="90" y2="90" class="lamp"/>
-								<line x1="0" x2="100" y1="100" y2="100" class="lamp"/>
-				 </svg>
-				</label>
-				<a href="javascript:window.location.reload(true)"><h2>Curso BOOTSTRAP</h2></a>
-			</div>
-			<nav><!--menu-->
-				<ul>
-					<li><a href="#inicio">Inicio</a></li>
-					<li><a href="#main">cuerpo</a></li>
-					<li><a href="#footer">Pie de pagina</a></li>
-				</ul>
-			</nav>
 		</header>
 <!--frente de la tienda-->
-	<main id="main">
-		<div>
-			<p>El cuerpo de la pagina va acá
-			<span><br/>Esto es un span</span></p></div>
+	<div class="jumbotron"><h2>Curso-bootstrap</h2></div>
+	<main class="container">
+		<div class="row">
+			<div class="col-sm-4"><h3>¿Como lo uso?</h3><span>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic aliquid cum iste. Temporibus, quibusdam. Amet aspernatur dolorem fugit dolorum possimus tempore assumenda, eveniet, ipsam aliquam quisquam magnam quaerat? Odio, eius.</span></div>
+			<div class="col-sm-4"><h3>¿Donde puedo reservar?</h3><span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, minima? Odit laborum illum vel quaerat corrupti! Sapiente praesentium adipisci incidunt rerum libero qui. Aperiam dolore deserunt, pariatur laudantium natus deleniti?</span></div>
+			<div class="col-sm-4"><h3>¿Como pago?</h3><span>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae quod deserunt labore asperiores. Porro expedita, cumque hic architecto nobis harum ullam? Alias ipsa totam inventore nobis ad architecto culpa repellendus.</span></div>
+		</div>
+		<hr/>
+		<div class="d-flex flex-wrap">
+			<div class="ficha"><div><h4>Objeto 1</h4><p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p></div><button class="btn btn-primary">Reservar</button></div>
+			<div class="ficha"><div><h4>Objeto 2</h4><p>Nesciunt quod iusto, facilis necessitatibus dolorum, error laborum eaque, ipsam amet tempore vero sequi quidem maxime accusamus iure officia fugiat veniam illo.</p></div><button class="btn btn-warning">boton</button></div>
+			<div class="ficha"><div><h4>Objeto 3</h4><p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p></div><button class="btn btn-success">boton</button></div>
+			<div class="ficha"><div><h4>Objeto 4</h4><p>Quod suscipit inventore ipsa repellendus id quam incidunt nemo blanditiis sint velit ullam modi sunt, impedit deserunt ratione! Rerum sequi aspernatur quos.</p></div><button class="btn btn-primary">boton</button></div>
+			<div class="ficha"><div><h4>Objeto 5</h4><p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloremque, alias! Alias minima rem est nostrum quos delectus mollitia voluptatum odit eius fugiat recusandae corrupti tenetur deserunt exercitationem aut, nam dolor.</p></div><button class="btn btn-success">boton</button></div>
+			<div class="ficha"><div><h4>Objeto 6</h4><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, veniam. Nostrum unde doloribus quis libero temporibus enim accusamus iste mollitia? Animi consectetur ipsa, velit aut aspernatur error quae omnis ad?</p></div><button class="btn btn-warning">boton</button></div>
+		</div>
 	</main>
-<!--fin del frente-->
-	<footer id="footer">
-			<input type="text" class="search" id="buscador" placeholder="Buscardor" >
-			<input type="checkbox" id="btn-menu">
-			<label for="btn-menu" class="icono-menu">
-				<svg class="dibujo-icono-menu">
-				<line x1="0" x2="30" y1="10" y2="10"/>
-				<line x1="0" x2="30" y1="20" y2="20"/>
-				<line x1="0" x2="30" y1="30" y2="30"/>
-				</svg>
-			</label>
-			<nav class="menu" id="menu_bottom">
-				<ul>
-					<li><a href="#Perfil">Perfil</a></li>
-					<li><a href="#">Notificaciones</a></li>
-					<li><a href="#">Favoritos</a></li>
-					<li><a href="#">Compras</a></li>
-					<li><a href="#">Vender</a></li>
-					<li><a href="#">Configuración</a></li>
-				</ul>
-			</nav>
+	<br>
+	<footer>
+		<div class="d-flex">
+			<div class="ficha align-items-center">
+				<h5>REDES SOCIALES</h5>
+				<a href="https://odysee.com/">Odysee</a>
+				<a href="https://peepeth.com/">Peepeth</a>
+				<a href="https://twitter.com/home">Twitter</a>
+			</div>
+			<address class="ficha align-items-center">
+					<h5>Contacto</h5>
+					<p>Dirección</p>
+					<p>mail</p>
+					<p>telefono</p>
+			</address>
+		</div>
 	</footer>
+<!--fin del frente-->
 	<script src="node_modules/jquery/dist/jquery.min.js"></script>
 	<script src="node_modules/popper.js/dist/popper.min.js"></script>
 	<script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>

@@ -8,6 +8,7 @@
 		<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
 		<link rel="stylesheet" type="text/css" href="node_modules/bootstrap/dist/css/bootstrap.min.css"/>
 		<link rel="stylesheet" type="text/css" href="css/main.css"/>
+		<link rel="stylesheet" type="text/css" href="node_modules/open-iconic/font/css/open-iconic-foundation.min.css"/>
 		
 	</head>
 	<body>		
@@ -30,18 +31,56 @@
 <!--frente-->
 	<div class="jumbotron"><h2>Curso-bootstrap</h2></div>
 	<main class="container">
+		<!--breadcrumb-->
 		<nav aria-label="breadcrumb">
 			<ol class="breadcrumb">
 			  <li class="breadcrumb-item"><a href="./index.html">Inicio</a></li>
 			  <li class="breadcrumb-item active" aria-current="page">contacto</li>
 			</ol>
 		</nav>
-		<div class="row">
-			<div class="col-sm-4"><h3>¿Como lo uso?</h3><span>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic aliquid cum iste. Temporibus, quibusdam. Amet aspernatur dolorem fugit dolorum possimus tempore assumenda, eveniet, ipsam aliquam quisquam magnam quaerat? Odio, eius.</span></div>
-			<div class="col-sm-4"><h3>¿Donde puedo reservar?</h3><span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, minima? Odit laborum illum vel quaerat corrupti! Sapiente praesentium adipisci incidunt rerum libero qui. Aperiam dolore deserunt, pariatur laudantium natus deleniti?</span></div>
-			<div class="col-sm-4"><h3>¿Como pago?</h3><span>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae quod deserunt labore asperiores. Porro expedita, cumque hic architecto nobis harum ullam? Alias ipsa totam inventore nobis ad architecto culpa repellendus.</span></div>
-		</div>
-		<hr/>
+		<!--formulario-->
+
+		<h4>Deja tus comentarios</h4>
+
+		<form>
+			<div class="input-group mb-3">
+				<span class="input-group-text col-md-3">Nombre y apellido</span>
+				<input type="text" aria-label="nombre" id="nombre" class="form-control" placeholder="nombre">
+				<input type="text" aria-label="apellido" id="apellido" class="form-control" placeholder="apellido">
+			</div>
+			
+			<div class="input-group">
+				<span class="input-group-text col-md-2">Mail</span>
+				<input type="email" class="form-control" placeholder="name@example.com"  aria-label="email" id="email">
+			</div>
+			<div class="form-check mb-3 ml-3">
+				<input class="form-check-input" type="checkbox" value="" id="check-noticias" checked>
+				<label class="form-check-label" for="check-noticias">
+				  Recibir newslater
+				</label>
+			</div>
+
+			<div class="input-group mb-3">
+				<span class="input-group-text col-md-2">Dirección</span>
+				<input type="text" class="form-control" placeholder="Dirección" aria-label="direccion" id="direccion">
+				<select class="form-select col-md-3" aria-label="provincia">
+					<option selected>Provincia 0</option>
+					<option value="1">Provincia 1</option>
+					<option value="2">Provincia 2</option>
+					<option value="3">Provincia 3</option>
+				</select>
+			</div>
+
+			<div class="input-group mb-3">
+				<span class="input-group-text col-md-2">Mensaje</span>
+				<textarea class="form-control" aria-label="mensaje" id="mensaje" placeholder="Quiero comentarles que..."></textarea>
+			</div>
+			
+			<div class="input-group">
+				<input type="submit" class="btn btn-primary form-control">
+				<input type="reset" class="btn btn-warning form-control">
+			</div>
+		</form>
 	</main>
 <!--fin del frente-->
 	<br>

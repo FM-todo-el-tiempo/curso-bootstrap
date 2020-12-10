@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<title>Curso-bootstrap</title>
+		<meta name="description" content="trabajo practico"/>
+		<meta name="author" content="Montlein"/>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
+		<link rel="stylesheet" type="text/css" href="node_modules/bootstrap/dist/css/bootstrap.min.css"/>
+		<link rel="stylesheet" type="text/css" href="css/main.css"/>
+		<link rel="stylesheet" type="text/css" href="node_modules/open-iconic/font/css/open-iconic-foundation.min.css"/>
+		
+	</head>
+	<body>		
+		<nav class="navbar navbar-expand-md navbar-dark bg-dark">
+			<div class="container-fluid">
+			  <a class="navbar-brand" href="./index.html">PROYECTO</a>
+			  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			  </button>
+			  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+				<div class="navbar-nav">
+					<a class="nav-link" aria-current="page" href="./index.html">Inicio</a>
+					<a class="nav-link active" href="javascript:window.location.reload(true)">Contacto</a>
+					<a class="nav-link" href="#">Nosotros</a>
+					<a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Proximamente</a>
+				</div>
+			  </div>
+			</div>
+		  </nav>
+<!--frente-->
+	<div class="jumbotron"><h2>Curso-bootstrap</h2></div>
+	<main class="container">
+		<!--breadcrumb-->
+		<nav aria-label="breadcrumb">
+			<ol class="breadcrumb">
+			  <li class="breadcrumb-item"><a href="./index.html">Inicio</a></li>
+			  <li class="breadcrumb-item active" aria-current="page">contacto</li>
+			</ol>
+		</nav>
+		<!--formulario-->
+
+		<h4>Deja tus comentarios</h4>
+
+		<form>
+			<div class="input-group mb-3">
+				<span class="input-group-text col-md-3">Nombre y apellido</span>
+				<input type="text" aria-label="nombre" id="nombre" class="form-control" placeholder="nombre">
+				<input type="text" aria-label="apellido" id="apellido" class="form-control" placeholder="apellido">
+			</div>
+			
+			<div class="input-group">
+				<span class="input-group-text col-md-2">Mail</span>
+				<input type="email" class="form-control" placeholder="name@example.com"  aria-label="email" id="email">
+			</div>
+			<div class="form-check mb-3 ml-3">
+				<input class="form-check-input" type="checkbox" value="" id="check-noticias" checked>
+				<label class="form-check-label" for="check-noticias">
+				  Recibir newslater
+				</label>
+			</div>
+
+			<div class="input-group mb-3">
+				<span class="input-group-text col-md-2">Dirección</span>
+				<input type="text" class="form-control" placeholder="Dirección" aria-label="direccion" id="direccion">
+				<select class="form-select col-md-3" aria-label="provincia">
+					<option selected>Provincia 0</option>
+					<option value="1">Provincia 1</option>
+					<option value="2">Provincia 2</option>
+					<option value="3">Provincia 3</option>
+				</select>
+			</div>
+
+			<div class="input-group mb-3">
+				<span class="input-group-text col-md-2">Mensaje</span>
+				<textarea class="form-control" aria-label="mensaje" id="mensaje" placeholder="Quiero comentarles que..."></textarea>
+			</div>
+			
+			<div class="input-group">
+				<input type="submit" class="btn btn-primary form-control">
+				<input type="reset" class="btn btn-warning form-control">
+			</div>
+		</form>
+	</main>
+<!--fin del frente-->
+	<br>
+	<footer>
+		<div class="d-flex">
+			<div class="ficha align-items-center">
+				<h5>REDES SOCIALES</h5>
+				<a href="https://odysee.com/">Odysee</a>
+				<a href="https://peepeth.com/">Peepeth</a>
+				<a href="https://twitter.com/home">Twitter</a>
+			</div>
+			<address class="ficha align-items-center">
+					<h5>Contacto</h5>
+					<p>Dirección</p>
+					<p>mail</p>
+					<p>telefono</p>
+			</address>
+		</div>
+	</footer>
+	<script src="node_modules/jquery/dist/jquery.min.js"></script>
+	<script src="node_modules/popper.js/dist/popper.min.js"></script>
+	<script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+	</body>
+</html>

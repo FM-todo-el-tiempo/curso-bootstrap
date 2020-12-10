@@ -8,14 +8,34 @@
 		<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
 		<link rel="stylesheet" type="text/css" href="node_modules/bootstrap/dist/css/bootstrap.min.css"/>
 		<link rel="stylesheet" type="text/css" href="css/main.css"/>
+		<link rel="stylesheet" type="text/css" href="node_modules/open-iconic/font/css/open-iconic-foundation.min.css"/>
 		
 	</head>
-	<body>
-		<header>
-		</header>
-<!--frente de la tienda-->
+	<body>		
+		<nav class="navbar navbar-expand-md navbar-dark bg-dark">
+			<div class="container-fluid">
+			  <a class="navbar-brand" href="javascript:window.location.reload(true)">PROYECTO</a>
+			  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			  </button>
+			  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+				<div class="navbar-nav">
+					<a class="nav-link active" aria-current="page" href="javascript:window.location.reload(true)">Inicio</a>
+					<a class="nav-link" href="./contacto.html">Contacto</a>
+					<a class="nav-link" href="#">Nosotros</a>
+					<a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Proximamente</a>
+				</div>
+			  </div>
+			</div>
+		  </nav>
+<!--frente-->
 	<div class="jumbotron"><h2>Curso-bootstrap</h2></div>
 	<main class="container">
+		<nav aria-label="breadcrumb">
+			<ol class="breadcrumb">
+			  <li class="breadcrumb-item active" aria-current="page">Inicio</li>
+			</ol>
+		</nav>
 		<div class="row">
 			<div class="col-sm-4"><h3>¿Como lo uso?</h3><span>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic aliquid cum iste. Temporibus, quibusdam. Amet aspernatur dolorem fugit dolorum possimus tempore assumenda, eveniet, ipsam aliquam quisquam magnam quaerat? Odio, eius.</span></div>
 			<div class="col-sm-4"><h3>¿Donde puedo reservar?</h3><span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, minima? Odit laborum illum vel quaerat corrupti! Sapiente praesentium adipisci incidunt rerum libero qui. Aperiam dolore deserunt, pariatur laudantium natus deleniti?</span></div>
@@ -31,6 +51,7 @@
 			<div class="ficha"><div><h4>Objeto 6</h4><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, veniam. Nostrum unde doloribus quis libero temporibus enim accusamus iste mollitia? Animi consectetur ipsa, velit aut aspernatur error quae omnis ad?</p></div><button class="btn btn-warning">boton</button></div>
 		</div>
 	</main>
+<!--fin del frente-->
 	<br>
 	<footer>
 		<div class="d-flex">
@@ -48,7 +69,6 @@
 			</address>
 		</div>
 	</footer>
-<!--fin del frente-->
 	<script src="node_modules/jquery/dist/jquery.min.js"></script>
 	<script src="node_modules/popper.js/dist/popper.min.js"></script>
 	<script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>

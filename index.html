@@ -8,7 +8,7 @@
 		<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
 		<link rel="stylesheet" type="text/css" href="node_modules/bootstrap/dist/css/bootstrap.min.css"/>
 		<link rel="stylesheet" type="text/css" href="css/main.css"/>
-		<link rel="stylesheet" type="text/css" href="node_modules/open-iconic/font/css/open-iconic-foundation.min.css"/>
+		<link rel="stylesheet" type="text/css" href="node_modules/open-iconic/font/css/open-iconic-bootstrap.min.css"/>
 		
 	</head>
 	<body>		
@@ -22,7 +22,7 @@
 				<div class="navbar-nav">
 					<a class="nav-link active" aria-current="page" href="javascript:window.location.reload(true)">Inicio</a>
 					<a class="nav-link" href="./contacto.html">Contacto</a>
-					<a class="nav-link" href="#">Nosotros</a>
+					<a class="nav-link" href="./valores.html">Valores</a>
 					<a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Proximamente</a>
 				</div>
 			  </div>
@@ -42,13 +42,20 @@
 			<div class="col-sm-4"><h3>¿Como pago?</h3><span>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae quod deserunt labore asperiores. Porro expedita, cumque hic architecto nobis harum ullam? Alias ipsa totam inventore nobis ad architecto culpa repellendus.</span></div>
 		</div>
 		<hr/>
+		<img src="img/maravillas.jpg" class="img-fluid"/>
 		<div class="d-flex flex-wrap">
-			<div class="ficha"><div><h4>Objeto 1</h4><p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p></div><button class="btn btn-primary">Reservar</button></div>
-			<div class="ficha"><div><h4>Objeto 2</h4><p>Nesciunt quod iusto, facilis necessitatibus dolorum, error laborum eaque, ipsam amet tempore vero sequi quidem maxime accusamus iure officia fugiat veniam illo.</p></div><button class="btn btn-warning">boton</button></div>
-			<div class="ficha"><div><h4>Objeto 3</h4><p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p></div><button class="btn btn-success">boton</button></div>
-			<div class="ficha"><div><h4>Objeto 4</h4><p>Quod suscipit inventore ipsa repellendus id quam incidunt nemo blanditiis sint velit ullam modi sunt, impedit deserunt ratione! Rerum sequi aspernatur quos.</p></div><button class="btn btn-primary">boton</button></div>
-			<div class="ficha"><div><h4>Objeto 5</h4><p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloremque, alias! Alias minima rem est nostrum quos delectus mollitia voluptatum odit eius fugiat recusandae corrupti tenetur deserunt exercitationem aut, nam dolor.</p></div><button class="btn btn-success">boton</button></div>
-			<div class="ficha"><div><h4>Objeto 6</h4><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, veniam. Nostrum unde doloribus quis libero temporibus enim accusamus iste mollitia? Animi consectetur ipsa, velit aut aspernatur error quae omnis ad?</p></div><button class="btn btn-warning">boton</button></div>
+			<div class="card ficha m-1">
+				<img src="img/tienda.jpg" class="card-img-top"/><div class="card-body"><h4 class="card-title">Objeto 1</h4><p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p></div><button class="btn btn-primary">Reservar</button></div>
+			<div class="card ficha m-1">
+				<img src="img/tienda.jpg" class="card-img-top"/><div class="card-body"><h4 class="card-title">Objeto 2</h4><p class="card-text">Nesciunt quod iusto, facilis necessitatibus dolorum, error laborum eaque, ipsam amet tempore vero sequi quidem maxime accusamus iure officia fugiat veniam illo.</p></div><button class="btn btn-warning">boton</button></div>
+			<div class="card ficha m-1">
+				<img src="img/tienda.jpg" class="card-img-top"/><div class="card-body"><h4 class="card-title">Objeto 3</h4><p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p></div><button class="btn btn-success">boton</button></div>
+			<div class="card ficha m-1">
+				<img src="img/tienda.jpg" class="card-img-top"/><div class="card-body"><h4 class="card-title">Objeto 4</h4><p class="card-text">Quod suscipit inventore ipsa repellendus id quam incidunt nemo blanditiis sint velit ullam modi sunt, impedit deserunt ratione! Rerum sequi aspernatur quos.</p></div><button class="btn btn-primary">boton</button></div>
+			<div class="card ficha m-1">
+				<img src="img/tienda.jpg" class="card-img-top"/><div class="card-body"><h4 class="card-title">Objeto 5</h4><p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloremque, alias! Alias minima rem est nostrum quos delectus mollitia voluptatum odit eius fugiat recusandae corrupti tenetur deserunt exercitationem aut, nam dolor.</p></div><button class="btn btn-success">boton</button></div>
+			<div class="card ficha m-1">
+				<img src="img/tienda.jpg" class="card-img-top"/><div class="card-body"><h4 class="card-title">Objeto 6</h4><p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, veniam. Nostrum unde doloribus quis libero temporibus enim accusamus iste mollitia? Animi consectetur ipsa, velit aut aspernatur error quae omnis ad?</p></div><button class="btn btn-warning">boton</button></div>
 		</div>
 	</main>
 <!--fin del frente-->
@@ -65,7 +72,7 @@
 					<h5>Contacto</h5>
 					<p>Dirección</p>
 					<p>mail</p>
-					<p>telefono</p>
+					<p><span class="oi oi-phone" title="icon name" aria-hidden="true"></span>+54 11 1234 5678</p>
 			</address>
 		</div>
 	</footer>

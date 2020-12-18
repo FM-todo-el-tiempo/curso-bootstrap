@@ -23,3 +23,7 @@ footer {
     position:sticky;
     top:0;
 }
+
+.card {
+    position: unset;
+}

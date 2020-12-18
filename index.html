@@ -37,26 +37,32 @@
 			</ol>
 		</nav>
 		<div class="row">
-			<div class="col-sm-4"><h3>¿Como lo uso?</h3><span>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic aliquid cum iste. Temporibus, quibusdam. Amet aspernatur dolorem fugit dolorum possimus tempore assumenda, eveniet, ipsam aliquam quisquam magnam quaerat? Odio, eius.</span></div>
-			<div class="col-sm-4"><h3>¿Donde puedo reservar?</h3><span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, minima? Odit laborum illum vel quaerat corrupti! Sapiente praesentium adipisci incidunt rerum libero qui. Aperiam dolore deserunt, pariatur laudantium natus deleniti?</span></div>
-			<div class="col-sm-4"><h3>¿Como pago?</h3><span>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae quod deserunt labore asperiores. Porro expedita, cumque hic architecto nobis harum ullam? Alias ipsa totam inventore nobis ad architecto culpa repellendus.</span></div>
+			<div class="col-sm-4"><button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#uso" aria-controls="multiCollapse1">¿como lo uso?</button></div>
+			<div class="col-sm-4"><button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#reserva" aria-controls="multiCollapse2">¿como reservar?</button></div>
+			<div class="col-sm-4"><button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#pago" aria-controls="multiCollapse3">¿como pagar?</button></div>
+		</div>
+		<div class="row">
+			<div class="col-sm-4 collapse multi-collapse" id="uso"><h3>¿Como lo uso?</h3><span>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic aliquid cum iste. Temporibus, quibusdam. Amet aspernatur dolorem fugit dolorum possimus tempore assumenda, eveniet, ipsam aliquam quisquam magnam quaerat? Odio, eius.</span></div>
+			<div class="col-sm-4 collapse multi-collapse" id="reserva"><h3>¿Donde puedo reservar?</h3><span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, minima? Odit laborum illum vel quaerat corrupti! Sapiente praesentium adipisci incidunt rerum libero qui. Aperiam dolore deserunt, pariatur laudantium natus deleniti?</span></div>
+			<div class="col-sm-4 collapse multi-collapse" id="pago"><h3>¿Como pago?</h3><span>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae quod deserunt labore asperiores. Porro expedita, cumque hic architecto nobis harum ullam? Alias ipsa totam inventore nobis ad architecto culpa repellendus.</span></div>
 		</div>
 		<hr/>
 		<img src="img/maravillas.jpg" class="img-fluid"/>
 		<div class="d-flex flex-wrap">
 			<div class="card ficha m-1">
-				<img src="img/tienda.jpg" class="card-img-top"/><div class="card-body"><h4 class="card-title">Objeto 1</h4><p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p></div><button class="btn btn-primary">Reservar</button></div>
+				<img src="img/tienda.jpg" class="card-img-top"/><div class="card-body"><h4 class="card-title">Objeto 1</h4><p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p></div><div class="card-text collapse" id="necesario"><span>Acordate de tener lo necesario antes de reservar</span></div><button class="btn btn-primary" data-toggle="collapse" data-target="#necesario" type="button">Reservar</button></div>
 			<div class="card ficha m-1">
-				<img src="img/tienda.jpg" class="card-img-top"/><div class="card-body"><h4 class="card-title">Objeto 2</h4><p class="card-text">Nesciunt quod iusto, facilis necessitatibus dolorum, error laborum eaque, ipsam amet tempore vero sequi quidem maxime accusamus iure officia fugiat veniam illo.</p></div><button class="btn btn-warning">boton</button></div>
+				<img src="img/tienda.jpg" class="card-img-top"/><div class="card-body"><h4 class="card-title">Objeto 2</h4><p class="card-text">Nesciunt quod iusto, facilis necessitatibus dolorum, error laborum eaque, ipsam amet tempore vero sequi quidem maxime accusamus iure officia fugiat veniam illo.</p></div><button class="btn btn-warning" type="button">boton</button></div>
 			<div class="card ficha m-1">
-				<img src="img/tienda.jpg" class="card-img-top"/><div class="card-body"><h4 class="card-title">Objeto 3</h4><p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p></div><button class="btn btn-success">boton</button></div>
+				<img src="img/tienda.jpg" class="card-img-top"/><div class="card-body"><h4 class="card-title">Objeto 3</h4><p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p></div><button class="btn btn-success" type="button">boton</button></div>
 			<div class="card ficha m-1">
-				<img src="img/tienda.jpg" class="card-img-top"/><div class="card-body"><h4 class="card-title">Objeto 4</h4><p class="card-text">Quod suscipit inventore ipsa repellendus id quam incidunt nemo blanditiis sint velit ullam modi sunt, impedit deserunt ratione! Rerum sequi aspernatur quos.</p></div><button class="btn btn-primary">boton</button></div>
+				<img src="img/tienda.jpg" class="card-img-top"/><div class="card-body"><h4 class="card-title">Objeto 4</h4><p class="card-text">Quod suscipit inventore ipsa repellendus id quam incidunt nemo blanditiis sint velit ullam modi sunt, impedit deserunt ratione! Rerum sequi aspernatur quos.</p></div><button class="btn btn-primary" type="button">boton</button></div>
 			<div class="card ficha m-1">
-				<img src="img/tienda.jpg" class="card-img-top"/><div class="card-body"><h4 class="card-title">Objeto 5</h4><p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloremque, alias! Alias minima rem est nostrum quos delectus mollitia voluptatum odit eius fugiat recusandae corrupti tenetur deserunt exercitationem aut, nam dolor.</p></div><button class="btn btn-success">boton</button></div>
+				<img src="img/tienda.jpg" class="card-img-top"/><div class="card-body"><h4 class="card-title">Objeto 5</h4><p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloremque, alias! Alias minima rem est nostrum quos delectus mollitia voluptatum odit eius fugiat recusandae corrupti tenetur deserunt exercitationem aut, nam dolor.</p></div><button class="btn btn-success" type="button">boton</button></div>
 			<div class="card ficha m-1">
-				<img src="img/tienda.jpg" class="card-img-top"/><div class="card-body"><h4 class="card-title">Objeto 6</h4><p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, veniam. Nostrum unde doloribus quis libero temporibus enim accusamus iste mollitia? Animi consectetur ipsa, velit aut aspernatur error quae omnis ad?</p></div><button class="btn btn-warning">boton</button></div>
+				<img src="img/tienda.jpg" class="card-img-top"/><div class="card-body"><h4 class="card-title">Objeto 6</h4><p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, veniam. Nostrum unde doloribus quis libero temporibus enim accusamus iste mollitia? Animi consectetur ipsa, velit aut aspernatur error quae omnis ad?</p></div><button class="btn btn-warning" type="button">boton</button></div>
 		</div>
+			
 	</main>
 <!--fin del frente-->
 	<br>

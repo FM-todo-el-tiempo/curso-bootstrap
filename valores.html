@@ -95,11 +95,35 @@
 				</div>
 			</div>
 			<div class="tab-pane fade show"  id="pago" role="tabpanel">
-				<div>
-					<p>Cryptoactivos</p>
-					<p>Efectivo</p>
-					<p>Tarjetas</p>
-				</div>
+				<div class="accordion" id="pago-accordion">			
+					<div class="card">
+						<div class="card-header" id="efectivo-header">
+							<button class="btn btn-link" data-toggle="collapse" data-target="#efectivo" type="button">Efectivo</button>
+						</div>
+						<div class="collapse show" id="efectivo" aria-labelledby="efectivo-header" data-parent="#pago-accordion">
+							<div class="card-body">Dorales Yuanes Pesos</div>
+						</div>
+					</div>
+				
+				
+					<div class="card">
+						<div class="card-header" id="tarjeta-header">
+							<button class="btn btn-link" data-toggle="collapse" data-target="#tarjeta" type="button">Tarjeta</button>
+						</div>
+						<div class="collapse" id="tarjeta" aria-labelledby="tarjeta-header" data-parent="#pago-accordion">
+							<div class="card-body">Visa Mastercard</div>
+						</div>
+					</div>
+
+					<div class="card">
+						<div class="card-header" id="crypto-header">
+							<button class="btn btn-link" data-toggle="collapse" data-target="#crypto" type="button">Cryptoactivos</button>
+						</div>
+						<div class="collapse" id="crypto" aria-labelledby="crypto-header" data-parent="#pago-accordion">
+							<div class="card-body">BTC ETH Monero Nano</div>
+						</div>
+					</div>
+				</div>		
 			</div>
 		</div>
 	</main>

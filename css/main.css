@@ -1,5 +1,6 @@
 .jumbotron {
     background: #e0d8b0;
+    margin-top: 50px;
 }
 
 body {
@@ -20,8 +21,7 @@ footer {
 }
 
 .navbar {
-    position:sticky;
-    top:0;
+   
 }
 
 .card {

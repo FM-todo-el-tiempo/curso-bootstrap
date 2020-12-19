@@ -1,0 +1,36 @@
+$caqui:#e0d8b0;
+$blanco-grisaseo:#e7ebda;
+
+@mixin padding($t, $r, $b, $l) {
+    padding-top: $t;
+    padding-left: $l;
+    padding-bottom: $b;
+    padding-right: $r;
+
+}
+
+.jumbotron {
+    background: $caqui;
+    margin-top: 50px;
+}
+
+body {
+    background: $blanco-grisaseo;
+}
+
+footer {
+    background: $caqui;
+    @include padding(10px, 15px, 0px, 15px);
+}
+
+.ficha {
+    @include padding(5px, 10px, 5px, 10px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex:1 250px;
+}
+
+.card {
+    position: unset;
+}

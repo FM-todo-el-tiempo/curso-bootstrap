@@ -1,0 +1,26 @@
+.jumbotron {
+  background: #e0d8b0;
+  margin-top: 50px; }
+
+body {
+  background: #e7ebda; }
+
+footer {
+  background: #e0d8b0;
+  padding-top: 10px;
+  padding-left: 15px;
+  padding-bottom: 0px;
+  padding-right: 15px; }
+
+.ficha {
+  padding-top: 5px;
+  padding-left: 10px;
+  padding-bottom: 5px;
+  padding-right: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 1 250px; }
+
+.card {
+  position: unset; }

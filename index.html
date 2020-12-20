@@ -6,10 +6,11 @@
 		<meta name="author" content="Montlein"/>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
+		<!--build:css dist/estilos.css-->
 		<link rel="stylesheet" type="text/css" href="node_modules/bootstrap/dist/css/bootstrap.min.css"/>
-		<link rel="stylesheet" type="text/css" href="css/main.css"/>
+		<link rel="stylesheet" type="text/css" href="css/styles.css"/>
 		<link rel="stylesheet" type="text/css" href="node_modules/open-iconic/font/css/open-iconic-bootstrap.min.css"/>
-		
+		<!--endbuild-->	
 	</head>
 	<body>		
 		<nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
@@ -47,7 +48,28 @@
 			<div class="col-sm-4 collapse multi-collapse" id="pago"><h3>¿Como pago?</h3><span>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae quod deserunt labore asperiores. Porro expedita, cumque hic architecto nobis harum ullam? Alias ipsa totam inventore nobis ad architecto culpa repellendus.</span></div>
 		</div>
 		<hr/>
-		<img src="img/maravillas.jpg" class="img-fluid"/>
+		
+		<div class="carousel slide" data-ride="carousel" id="carrucel-body">
+			<ol class="carousel-indicators">
+				<li data-target="#carrucel-body" data-slide-to="0" class="active"></li>
+				<li data-target="#carrucel-body" data-slide-to="1"></li>
+				<li data-target="#carrucel-body" data-slide-to="2"></li>
+			</ol>
+			<div class="carousel-inner">
+				<div class="carousel-item active">
+					<img src="img/maravillas.jpg" class="img-fluid w-100"/></div>
+				<div class="carousel-item">
+					<img src="img/Titulo-1.png" class="img-fluid w-100"/></div>
+				<div class="carousel-item">
+					<img src="img/Titulo-2.png" class="img-fluid w-100"/></div>
+			</div>
+			<a class="carousel-control-prev" href="#carrucel-body" role="button" data-slide="prev">
+				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+			</a>
+			<a class="carousel-control-next" href="#carrucel-body" role="button" data-slide="next">
+				<span class="carousel-control-next-icon" aria-hidden="true"></span>
+			</a>
+		</div>
 		
 		<div class="d-flex flex-wrap">
 			<div class="card ficha m-1" data-content="Checkae fechas y precios antes de aceptar" title="Esto es un popover..." data-toggle="popover">
@@ -72,18 +94,18 @@
 						<span class="carousel-control-next-icon" aria-hidden="true"></span>
 					</a>
 				</div>
-					<div class="card-body"><h4 class="card-title" data-toggle="tooltip" data-placement="top" title="Informacion adicional del objeto 1">Objeto 1</h4><p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p></div><button class="btn btn-primary" data-toggle="modal" data-target="#confirmar-reserva" type="button">Reservar</button></div>
+					<div class="card-body"><h4 class="card-title" data-toggle="tooltip" data-placement="top" title="Informacion adicional del objeto 1">Objeto 1</h4><p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p></div><button class="btn btn-warning btn-reserva" data-toggle="modal" data-target="#confirmar-reserva" type="button">Reservar</button></div>
 			
 			<div class="card ficha m-1">
-				<img src="img/tienda.jpg" class="card-img-top"/><div class="card-body"><h4 class="card-title" data-toggle="tooltip" data-placement="left" title="informacion adicional del objeto 2">Objeto 2</h4><p class="card-text">Nesciunt quod iusto, facilis necessitatibus dolorum, error laborum eaque, ipsam amet tempore vero sequi quidem maxime accusamus iure officia fugiat veniam illo.</p></div><button class="btn btn-warning" data-toggle="modal" data-target="#confirmar-reserva" type="button">boton</button></div>
+				<img src="img/tienda.jpg" class="card-img-top"/><div class="card-body"><h4 class="card-title" data-toggle="tooltip" data-placement="left" title="informacion adicional del objeto 2">Objeto 2</h4><p class="card-text">Nesciunt quod iusto, facilis necessitatibus dolorum, error laborum eaque, ipsam amet tempore vero sequi quidem maxime accusamus iure officia fugiat veniam illo.</p></div><button class="btn btn-warning btn-reserva" data-toggle="modal" data-target="#confirmar-reserva" type="button">boton</button></div>
 			<div class="card ficha m-1">
-				<img src="img/tienda.jpg" class="card-img-top"/><div class="card-body"><h4 class="card-title" data-toggle="tooltip" data-placement="top" title="Informacion adicional del objeto 3">Objeto 3</h4><p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p></div><button class="btn btn-success" type="button" data-toggle="modal" data-target="#confirmar-reserva">boton</button></div>
+				<img src="img/tienda.jpg" class="card-img-top"/><div class="card-body"><h4 class="card-title" data-toggle="tooltip" data-placement="top" title="Informacion adicional del objeto 3">Objeto 3</h4><p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p></div><button class="btn btn-warning btn-reserva" type="button" data-toggle="modal" data-target="#confirmar-reserva">boton</button></div>
 			<div class="card ficha m-1">
-				<img src="img/tienda.jpg" class="card-img-top"/><div class="card-body"><h4 class="card-title" data-toggle="tooltip" data-placement="right" title="Informacion adicional del objeto 4">Objeto 4</h4><p class="card-text">Quod suscipit inventore ipsa repellendus id quam incidunt nemo blanditiis sint velit ullam modi sunt, impedit deserunt ratione! Rerum sequi aspernatur quos.</p></div><button class="btn btn-primary" type="button" data-toggle="modal" data-target="#confirmar-reserva">boton</button></div>
+				<img src="img/tienda.jpg" class="card-img-top"/><div class="card-body"><h4 class="card-title" data-toggle="tooltip" data-placement="right" title="Informacion adicional del objeto 4">Objeto 4</h4><p class="card-text">Quod suscipit inventore ipsa repellendus id quam incidunt nemo blanditiis sint velit ullam modi sunt, impedit deserunt ratione! Rerum sequi aspernatur quos.</p></div><button class="btn btn-warning btn-reserva" type="button" data-toggle="modal" data-target="#confirmar-reserva">boton</button></div>
 			<div class="card ficha m-1">
-				<img src="img/tienda.jpg" class="card-img-top"/><div class="card-body"><h4 class="card-title" data-toggle="tooltip" data-placement="bottom" title="Informacion adicional del objeto 5">Objeto 5</h4><p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloremque, alias! Alias minima rem est nostrum quos delectus mollitia voluptatum odit eius fugiat recusandae corrupti tenetur deserunt exercitationem aut, nam dolor.</p></div><button class="btn btn-success" type="button" data-toggle="modal" data-target="#confirmar-reserva">boton</button></div>
+				<img src="img/tienda.jpg" class="card-img-top"/><div class="card-body"><h4 class="card-title" data-toggle="tooltip" data-placement="bottom" title="Informacion adicional del objeto 5">Objeto 5</h4><p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloremque, alias! Alias minima rem est nostrum quos delectus mollitia voluptatum odit eius fugiat recusandae corrupti tenetur deserunt exercitationem aut, nam dolor.</p></div><button class="btn btn-warning btn-reserva" type="button" data-toggle="modal" data-target="#confirmar-reserva">boton</button></div>
 			<div class="card ficha m-1">
-				<img src="img/tienda.jpg" class="card-img-top"/><div class="card-body"><h4 class="card-title" data-toggle="tooltip" data-placement="bottom" title="Informacion adicional del objeto 6">Objeto 6</h4><p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, veniam. Nostrum unde doloribus quis libero temporibus enim accusamus iste mollitia? Animi consectetur ipsa, velit aut aspernatur error quae omnis ad?</p></div><button class="btn btn-warning" data-toggle="modal" data-target="#confirmar-reserva" type="button">boton</button></div>
+				<img src="img/tienda.jpg" class="card-img-top"/><div class="card-body"><h4 class="card-title" data-toggle="tooltip" data-placement="bottom" title="Informacion adicional del objeto 6">Objeto 6</h4><p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, veniam. Nostrum unde doloribus quis libero temporibus enim accusamus iste mollitia? Animi consectetur ipsa, velit aut aspernatur error quae omnis ad?</p></div><button class="btn btn-warning btn-reserva" data-toggle="modal" data-target="#confirmar-reserva" type="button">boton</button></div>
 		</div>
 		<!--modal-->
 		<div class="modal fade" id="confirmar-reserva" tabindex="-1" aria-labelledby="titulo-modal" aria-hidden="true" data-backdrop="static">
@@ -136,18 +158,11 @@
 			</address>
 		</div>
 	</footer>
+	<!--build:js dist/main.js-->
 	<script src="node_modules/jquery/dist/jquery.min.js"></script>
-	<script src="node_modules/popper.js/dist/popper.min.js"></script>
+	<script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
 	<script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-	<script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-	<script>
-		$(function () {
-			$('[data-toggle="tooltip"]').tooltip();
-			$('[data-toggle="popover"]').popover();
-			$('.carousel').carousel({
-				interval: 1500
-			})
-		});
-	  </script>
+	<script src="js/main.js"></script>
+	  <!--endbuild-->
 	</body>
 </html>
